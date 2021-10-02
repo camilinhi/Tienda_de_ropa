@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos</title>
+        <link  rel="icon"   href="Imagenes/icono.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="estilo/menu.css"> 
+        <link rel="stylesheet" type="text/css" href="estilo/productos.css"> 
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    </head>
+    
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="Scirpts/productos.js" ></script>
+        <h1>Productos disponibles</h1>
+
+        <table id="navBar">
+            <tr>
+                <th><a href="index.html">Inicio</a></th>   
+                <th><a href="productos.html">Productos</a></th>
+                <th><a href="clientes.html">Clientes</a></th>
+                <th><a href="carrito.html">Carrito de Compras</a></th>
+            </tr>
+        </table>
+        <div class="container" id="galeria">
+
+            <div class="row fila-productos">
+                
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tarjeta-productos">
+                    <img class="imagen-producto" src="Imagenes/Productos/camisa.jpg" style="width: 100%;height: auto;">
+                    <br>
+                    <h1 class="nombre_producto">Camisa</h1>
+                    <h3 class="precio-producto">$55.000</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est quos. </p>
+                    <div id="icono" class="div-icono">
+                        <i class="las la-cart-arrow-down estilo-icono" onclick="agregarAlCarro('Camisa',55000)"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tarjeta-productos">
+                    <img class="imagen-producto" src="Imagenes/Productos/pantalon.png" style="width: 100%;height: auto;">
+                    <h1 class="nombre_producto">Pantalon</h1>
+                    <h3 class="precio-producto">$45.000</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est quos. </p>
+                    <div id="icono" class="div-icono">
+                        <i class="las la-cart-arrow-down estilo-icono"  onclick="agregarAlCarro('Pantalon', 45000)"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tarjeta-productos">
+                    <img class="imagen-producto" src="Imagenes/Productos/vestido.jpg" style="width: 100%;height: auto;">
+                    <h1 class="nombre_producto">Vestido</h1>
+                    <h3 class="precio-producto">$45.000</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est quos. </p>
+                    <div id="icono" class="div-icono">
+                        <i class="las la-cart-arrow-down estilo-icono" onclick="agregarAlCarro('Vestido', 45000)"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tarjeta-productos">
+                    <img class="imagen-producto" src="Imagenes/Productos/camiseta.jpg" style="width: 100%;height: auto;">
+                    <h1 class="nombre_producto">Camiseta</h1>
+                    <h3 class="precio-producto">$25.000</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est quos.</p>
+                    <div id="icono" class="div-icono">
+                        <i class="las la-cart-arrow-down estilo-icono" onclick="agregarAlCarro('Camiseta', 25000)"></i>
+                    </div>
+                </div>
+       
+            </div>
+            <div class="row  fila-productos">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tarjeta-productos">
+                    <img src="Imagenes/Productos/falda2.jpeg" style="width: 100%;height: auto;">
+                    <h1 class="nombre_producto">Falda</h1>
+                    <h3 class="precio-producto">$25.000</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est quos. </p>
+                    <div id="icono" class="div-icono">
+                        <i class="las la-cart-arrow-down estilo-icono" onclick="agregarAlCarro('Falda', 25000)" ></i>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tarjeta-productos">
+                    <img class="imagen-producto" src="Imagenes/Productos/cardigan.jpeg" style="width: 100%;height: auto;">
+                    <h1 class="nombre_producto">Cardigan</h1>
+                    <h3 class="precio-producto">$75.000</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi officia.</p>
+                    <div id="icono" class="div-icono">
+                        <i class="las la-cart-arrow-down estilo-icono" onclick="agregarAlCarro('Cardigan', 75000)"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tarjeta-productos">
+                    <img class="imagen-producto" src="Imagenes/Productos/buso.jpeg" style="width: 100%;height: auto;">
+                    <h1 class="nombre_producto">Buso</h1>
+                    <h3 class="precio-producto">$55.000</h3>
+                    <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nam quod.</p>
+                    <div id="icono" class="div-icono">
+                        <i class="las la-cart-arrow-down estilo-icono" onclick="agregarAlCarro('Buso', 55000)"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tarjeta-productos">
+                    <img class="imagen-producto" src="Imagenes/Productos/chaqueta.jpg" style="width: 100%;height: auto;">
+                    <h1 class="nombre_producto">Chaqueta</h1>
+                    <h3 class="precio-producto">$65.000</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, est quos.</p>
+                    <div id="icono" class="div-icono">
+                        <i class="las la-cart-arrow-down estilo-icono" onclick="agregarAlCarro('Chaqueta', 65000)"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta-total">
+                <h1>TOTAL</h1>
+                <h2 id="TotalCarrito">$0</h2>
+            </div>   
+        </div>
+    </body>
+</html>
